@@ -5,10 +5,10 @@ const cors = require("cors");
 const registrationRoutes = require("./routes/registration");
 
 mongoose
-  .connect(
-    "mongodb+srv://valentin01amani:dZAnDGB1tNNyb8iH@cluster0.7epkpvh.mongodb.net/?retryWrites=true&w=majority",
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  )
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log("Database connected");
   })
