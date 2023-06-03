@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1em;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+a {
+  color: #242424;
+  text-decoration: none;
+}
+
+em {
+  color: #a5b4fc;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #a5b4fc;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  color: #f9f8ff;
+}
+
+p,
+li {
+  font-size: 1.1em;
+  color: #f9f8ff;
+}
+
+header,
+footer {
+  background-color: white;
+  padding: 20px 50px;
+}
+
+.cta {
+  display: inline-block;
+  background: white;
+  color: black;
+  border-radius: 50px;
+  padding: 20px 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cta:hover {
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+.header-link {
+  margin-left: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  padding: 80px;
+}
+
+footer,
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  bottom: 0;
+}
+
+nav a {
+  margin-left: 30px;
+}
+
+.section-form h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.response {
+  text-align: center;
+  font-weight: bold;
+}
+
+.error {
+  text-align: center;
+  font-weight: bold;
+}
+
+.loading {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  color: white;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form {
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+table {
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 15px;
+  border: 1px solid #a5b4fc;
+}
+
+td {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav img {
+    margin-bottom: 20px;
+  }
+
+  header,
+  footer {
+    padding: 20px 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 50px 20px 50px 20px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .header-link {
+    margin-bottom: 1rem;
+  }
+
+  .section-form {
+    padding: 50px 20px;
+  }
+}
